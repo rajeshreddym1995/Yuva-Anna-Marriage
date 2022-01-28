@@ -15,8 +15,12 @@ https://github.com/rajeshreddym1995/Yuva-Anna-Marriage.git
 ```bash
 open js/constants.js and change required information and open css/style.css and change colours as needed
 ```
+**3.Edit the site**
+```bash
+ open index.html and change required Info and change Marriage time and date in JS/time.js file **
+```
 
-**3. View the site**
+**4. View the site**
 ```bash
 open index.html in browser
 ```
