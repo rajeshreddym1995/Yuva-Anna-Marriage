@@ -9,7 +9,7 @@ A Simple site to show wedding events infromation
 **1. Clone the application**
 
 ```bash
-https://github.com/jayachandra-jai/spring-boot-skeleton-sample.git
+https://github.com/rajeshreddym1995/Yuva-Anna-Marriage.git
 ```
 **2. Edit the site**
 ```bash
