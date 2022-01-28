@@ -9,14 +9,18 @@ A Simple site to show wedding events infromation
 **1. Clone the application**
 
 ```bash
-https://github.com/jayachandra-jai/spring-boot-skeleton-sample.git
+https://github.com/rajeshreddym1995/Yuva-Anna-Marriage.git
 ```
 **2. Edit the site**
 ```bash
 open js/constants.js and change required information and open css/style.css and change colours as needed
 ```
+**3.Edit the site**
+```bash
+ open index.html and change required Info and change Marriage time and date in JS/time.js file **
+```
 
-**3. View the site**
+**4. View the site**
 ```bash
 open index.html in browser
 ```
