@@ -1,0 +1,212 @@
+
+html {  
+  /* scroll-behavior: smooth;   */
+}
+
+/* -------------------------------------------------------------------------
+  VERTICAL STEPPERS
+-------------------------------------------------------------------------- */
+
+/* Steps */
+.step {
+  position: relative;
+  min-height: 1em;
+  color: gray;
+}
+.step + .step {
+  margin-top: 1.5em
+}
+.step > div:first-child {
+  position: static;
+  height: 0;
+}
+.step > div:not(:first-child) {
+  margin-left: 1.5em;
+  padding-left: 1em;
+}
+.step.step-active {
+  color: #ff1744;
+  animation: blinker 1s linear infinite;
+}
+.step.step-active .circle {
+  background-color: #ff1744;
+}
+
+.step.step-completed {
+  color: #000051;
+}
+.step.step-completed .circle {
+  background-color: #000051;
+}
+
+/* Circle */
+.circle {
+  background: gray;
+  position: relative;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  border-radius: 100%;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 0 0 3px #fff;
+}
+
+/* Vertical Line */
+.circle:after {
+  content: ' ';
+  position: absolute;
+  display: block;
+  top: 1px;
+  right: 50%;
+  bottom: 1px;
+  left: 50%;
+  height: 100%;
+  width: 1px;
+  transform: scale(1, 2);
+  transform-origin: 50% -100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+.step:last-child .circle:after {
+  display: none
+}
+
+/* Stepper Titles */
+.title {
+  line-height: 1.5em;
+  font-weight: bold;
+}
+.caption {
+  font-size: 0.65em;
+}
+
+.js-bg-primary {
+  background-color: #000051;
+}
+
+.js-primary {
+  color: #000051;
+}
+
+.js-bg-secondary {
+  background-color: #c4001d;
+}
+
+.js-secondary {
+  color: #c4001d;
+}
+
+
+#timer {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-size: .7em;
+  letter-spacing: 1px;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+
+.days, .hours, .minutes, .seconds {
+  display: inline-block;
+  padding: 2px;
+  width: 75px;
+  border-radius: 5px;
+}
+
+.days {
+  background: #000051;
+  color: white;
+  margin: 1px;
+}
+
+.hours {
+  background: #000051;
+  color: white;
+  margin: 1px;
+}
+
+.minutes {
+  background: #000051;
+  color: white;
+  margin: 1px;
+}
+
+.seconds {
+  background: #000051;
+  color: white;
+  margin: 1px;
+}
+
+.numbers {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 1em;
+}
+
+.time-title {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-size: 2em;
+  font-weight: bolder;
+  margin: 2px;
+}
+
+.js-title {
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  margin-top: 2px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+.js-sub-title {
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  letter-spacing: 1px;
+  margin-top: 2px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+.js-title-lg {
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-size: 2em;
+  letter-spacing: 1px;
+  margin-top: 2px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+.js-title-primary {
+  color: #000051;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  margin-top: 2px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
